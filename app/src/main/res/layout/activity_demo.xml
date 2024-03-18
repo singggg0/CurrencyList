@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:name="com.sws.currencylist.ui.fragment.CurrencyListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnClearDb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clear db" />
+
+            <Button
+                android:id="@+id/btnInsert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="insert data to db" />
+
+            <Button
+                android:id="@+id/btnCrypto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="filter crypto" />
+
+            <Button
+                android:id="@+id/btnFiat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="filter fiat" />
+
+            <Button
+                android:id="@+id/btnClearFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clear filter" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

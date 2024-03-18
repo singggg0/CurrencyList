@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Currency List</string>
+    <string name="empty_list_message">No results</string>
+    <string name="search_field_hint">CRYPTOCURRENCY</string>
+</resources>
